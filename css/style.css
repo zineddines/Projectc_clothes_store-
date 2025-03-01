@@ -1,0 +1,61 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Basic Page Styling */
+body {
+    background-color: #f8f9fa;
+   
+}
+
+
+:root {
+    /* colors  */
+    --cold_black:#353535;
+    --green_to_blue:#3c6e71;
+    --white:#ffffff;
+    --grey_cold:#d9d9d9;
+    --dark_blue:#284b63;
+
+
+    /* fonts  */
+
+    --font_primary:'Helvetica',sans-serif ;
+    --font_secondary:'optima',serif;
+    --font_third :'Baskerville',sans-serif;
+
+    /* font weight  */
+--weight-bold: 700;
+--weight-semiBold: 600;
+--weight-regular: 400;
+
+
+/* letter spacing  */
+--traking-n-025: -0.25px;
+--traking-p-05: 0.5px;
+
+
+/* border radius */
+--radius-small: 8px;
+--radius-medium: 12px;
+--radius-large: 16px;
+--radius-extra-large: 32px;
+--radius-full: 1000px;
+--radius-circle: 50%;
+
+/* box shadow  */
+--shadow-1: 0px 2px 4px 0px #00000033;
+--shadow-2: 0px 5px 10px 0px #0000000D;
+--shadow-3: 0px 5px 10px 0px #00000033;
+--shadow-4: 0px 10px 20px 0px #0000001A;
+
+
+}
+
+
+
+
