@@ -74,7 +74,7 @@ body .header {
 /* the logo of the website  */
 
 body .header .logo {
-    font-family: var(--font_secondary);
+    font-family:'Helvitica','serif';
     font-size: 40px;
     padding: 10px 20px;
     display: flex;
