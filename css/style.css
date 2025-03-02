@@ -59,3 +59,112 @@ body {
 
 
 
+/* HEADER */
+
+
+
+body .header {
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    width: 100%;
+    background-color: #284b63;
+}
+
+/* the logo of the website  */
+
+body .header .logo {
+    font-family: var(--font_secondary);
+    font-size: 40px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    
+
+}
+body .header .logo a {
+    text-decoration: none;
+    color: white;
+}
+body .header ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+body .header ul li {
+    list-style: none;
+    font-family: var(--font_primary);
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+body .header ul a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    transition: background-color 500ms ease;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+body .header ul a li:hover {
+background-color:#172d3b;
+}
+
+
+/* the login icon of the user  */
+body .header .login-icon a{
+    font-size: 20px;
+    color: white;
+}
+
+
+/* the icone menu in the phone  */
+body .header .menu-icon {
+    display: none;
+
+}
+
+
+
+/* responsive header  */
+
+@media (max-width:700px) {
+
+body .header ul {
+    
+    flex-direction: column;
+    background-color: black;
+    right: 0;
+    top: 0;
+    position:absolute;
+    opacity: 0;
+    transition: right 0.5s ease-in-out;
+}
+
+body .header .menu-icon {
+    display:flex;
+    font-size: 30px;
+    align-items: center;
+    padding: 10px;
+    
+}
+body .header .menu-icon a {
+    color: white;
+}
+
+body .header .menu-icon a:hover  {
+    display: none;
+    
+}
+
+}
