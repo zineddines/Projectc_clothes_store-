@@ -432,6 +432,7 @@ body, h1, p {
         position: relative;
         z-index: 1;
         width: 100%;
+        padding-inline: 20px;
     }
     .form-kh {
         z-index: 2;
@@ -457,6 +458,8 @@ body, h1, p {
         gap: 15px;
         align-items: center;
         justify-content: center;
+        width: 90%;
+        margin: auto;
     }
     .newsletter p {
        text-align: center;
