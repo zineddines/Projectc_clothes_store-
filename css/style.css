@@ -69,7 +69,7 @@ body .header {
     height: 55px;
     width: 100%;
     background-color: var(--green_to_blue);
-    animation: colorchange 20s; 
+    animation: colorchange 12s; 
  animation-iteration-count: infinite;
     
 }
@@ -157,6 +157,12 @@ body .header .menu-icon {
 /* responsive header  */
 
 @media (max-width:700px) {
+    
+body .header {
+    background-color: transparent;
+    animation: none;
+    
+}
 
 body .header ul {
 
@@ -171,6 +177,7 @@ body .header ul {
     flex-direction: column;
     transition: right 0.5s ease-in-out;
     z-index: 10;
+    justify-content: space-around;
 }
 body .header ul li,body .header ul a {
   width:100%;
@@ -252,8 +259,8 @@ body, h1, p {
     position: relative;
     flex-direction: column;
     gap: minmax(30px , 60px);
-    animation: slide 20s; 
- animation-iteration-count: infinite;
+    animation: slide 12s; 
+    animation-iteration-count: infinite;
     
 }
 
@@ -310,16 +317,37 @@ body, h1, p {
     color: var(--green_to_blue);
 }
 
+
+
 @keyframes slide {
     33%{background:url(../images/picture\ 1.png) no-repeat center center/cover ;
     }
     66%{background:url(../images/picture\ 2.png) no-repeat center center/cover ;}
     100%{background:url(../images/picture\ 3.png) no-repeat center center/cover ;}
 }
+@keyframes slidephone {
+    33%{background:url(../images/picture\ 1.png) no-repeat 70% center/cover ;
+    }
+    66%{background:url(../images/picture\ 2.png) no-repeat 70% center/cover ;}
+    100%{background:url(../images/picture\ 3.png) no-repeat 70% center/cover ;}
+}
 
+
+
+/* responsive Hero  */
 @media (max-width:700px) {
+    .hero {
+        animation: slidephone 12s infinite;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        z-index: -3;
+        width: 100%;
+
+    }
     
     .hero h1 {
         font-size: 2rem;
     }
+
 }
