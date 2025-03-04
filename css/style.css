@@ -548,6 +548,7 @@ body aside .price option {
 
 body aside .title-category,
 body aside .title-price {
+
     max-height: 20px;
     padding: 20px;
     position: relative;
@@ -555,7 +556,7 @@ body aside .title-price {
     font-family: "Fahkwang", serif;
     font-size: 15px;
     margin-inline: auto;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 
 }
 
@@ -564,7 +565,7 @@ body aside .title-price {
 }
 
 
-@media (max-width:700px){
+@media (max-width:768px){
 
 
     .sect_aside {
@@ -596,6 +597,10 @@ body aside .title-price {
     body .container-of-products {
         width: 100%;
     }
+    body aside .title-category,
+body aside .title-price{
+    margin-bottom: 10px;
+}
 
 }
 
