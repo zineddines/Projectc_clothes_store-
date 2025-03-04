@@ -364,17 +364,18 @@ body .container-of-products {
 
 .sect_aside {
     text-align: center;
+    width: 100%;
 }
 
 .textprod {
     width: 80%;
     margin: auto;
-    padding: 20px;
     text-align: center;
+    
 }
 
 .textprod h2 {
-    font-family: "Fahkwang", serif;
+    font-family: 'Fahkwang', serif;
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
@@ -385,6 +386,13 @@ body .container-of-products {
     font-family: "Fahkwang", serif;
 
 }
+.container-of-products{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
 /* products style */
 .container-of-products .all-products {
@@ -393,8 +401,10 @@ body .container-of-products {
     right: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+    margin: auto;
 }
 
 .container-of-products .product-one-by-one {
@@ -478,6 +488,7 @@ body .container-of-products {
     width: 100%;
     height: 300px;
     transition: 0.2s ease;
+    margin: auto;
 }
 
 
@@ -509,32 +520,30 @@ body aside {
     width: 20%;
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    bottom: -78px;
+   
 }
 
 body aside .category {
     width: 195px;
-    min-height: 20px;
-    padding: 20px;
+    max-height: 70px;
+    padding: 10px;
     position: relative;
     bottom: -80px;
-    overflow-x: hidden;
     margin-inline: auto;
-    box-sizing: border-box;
     text-align: center;
 }
 
 body aside .price {
     text-align: center;
     width: 195px;
-    min-height: 20px;
-    padding: 20px;
+    max-height: 70px;
+    padding: 10px;
     position: relative;
     bottom: -80px;
-    overflow-x: hidden;
     margin-inline: auto;
-    box-sizing: border-box;
+}
+body aside .price option {
+    font-size: 16px;
 }
 
 body aside .title-category,
@@ -555,7 +564,40 @@ body aside .title-price {
 }
 
 
+@media (max-width:700px){
 
+
+    .sect_aside {
+        display: flex;
+        flex-direction: column;
+    }
+    body aside {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+     body aside .category {
+        width: 100% ;
+        padding: 10px;
+       
+    } 
+    body aside .price {
+        width:100%;
+    }
+    .textprod {
+        width: 100%;
+    }
+    body .container-of-products {
+        width: 100%;
+    }
+
+}
 
 
 
