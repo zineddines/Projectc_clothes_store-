@@ -603,3 +603,238 @@ footer h3 {
     font-family: var(--font_third);
     text-align: center;
 }
+/* zino work  */
+
+body .container-of-products {
+    text-align: center;
+    width: 80%;
+}
+
+.sect_aside {
+    text-align: center;
+}
+
+.textprod {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.textprod h2 {
+    font-family: "Fahkwang", serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.textprod p {
+    font-family: "Fahkwang", serif;
+
+}
+
+/* products style */
+.container-of-products .all-products {
+    padding-top: 90px;
+    width: 100%;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    gap: 20px;
+}
+
+.container-of-products .product-one-by-one {
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+
+}
+
+/* box shadow hover */
+.product-one-by-one:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+.product-one-by-one:hover {
+    transform: scale(1.02);
+}
+
+/* styling add to cart button */
+/* .add-to-cart {
+    font-family: "Fahkwang", serif;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 178px;
+    padding: 12px 20px 11px;
+    background-color: black;
+    border-radius: 4px;
+    border: 1px #284b63 solid;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    left: 3%;
+
+    top: -1px;
+
+} */
+.add-to-cart {
+    font-family: "Fahkwang", serif;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 53px;
+    padding: 11px 14px 11px;
+    background-color: black;
+    border-radius: 4px;
+    border: 1px #284b63 solid;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    left: 1px;
+}
+
+/* اضافة الهوفر ل add to cart */
+.add-to-cart:hover {
+    background-color: white;
+    border-radius: 1px;
+    border: 1px #000000 solid;
+    color: #000000;
+
+}
+
+
+
+/* styling the title of pics and price */
+
+.link-products {
+    padding-top: 7px;
+    font-family: "Fahkwang", serif;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+}
+
+.p-of-price {
+    padding-top: 7px;
+    font-family: "Fahkwang", serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.p-of-price del {
+    font-size: small;
+}
+
+.p-of-price span {
+    color: black;
+
+}
+
+
+/* اضافة هوفر تغيير الصور في صورة المنتوج */
+.main-img {
+
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    transition: 0.2s ease;
+}
+
+
+.size-opt {
+    background-color: white;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.size-opt:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.optl-class {
+    background-color: white;
+}
+
+.opt-class:hover {
+    background-color: white;
+    color: #000000;
+
+}
+
+/* .products .img-hover {
+    border-radius: 20px;
+
+    cursor: pointer;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    opacity: 0;
+
+}
+
+.products .img-hover:hover {
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    opacity: 1;
+}  */
+body aside {
+    text-align: center;
+    position: relative;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    bottom: -78px;
+}
+
+body aside .category {
+    width: 195px;
+    min-height: 20px;
+    padding: 20px;
+    position: relative;
+    bottom: -80px;
+    overflow-x: hidden;
+    margin-inline: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body aside .price {
+    text-align: center;
+    width: 195px;
+    min-height: 20px;
+    padding: 20px;
+    position: relative;
+    bottom: -80px;
+    overflow-x: hidden;
+    margin-inline: auto;
+    box-sizing: border-box;
+}
+
+body aside .title-category,
+body aside .title-price {
+    max-height: 20px;
+    padding: 20px;
+    position: relative;
+    bottom: -80px;
+    font-family: "Fahkwang", serif;
+    font-size: 15px;
+    margin-inline: auto;
+    margin-bottom: 5px;
+
+}
+
+.sect_aside {
+    display: flex;
+}
