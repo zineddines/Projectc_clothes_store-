@@ -162,6 +162,7 @@ body .header .menu-icon {
 body .header {
     background-color: transparent;
     z-index: 5;
+    animation: none;
     
 }
 
@@ -353,6 +354,211 @@ body, h1, p {
 }
 
 
+/* products  */
+/* zino work  */
+
+body .container-of-products {
+    text-align: center;
+    width: 80%;
+}
+
+.sect_aside {
+    text-align: center;
+}
+
+.textprod {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.textprod h2 {
+    font-family: "Fahkwang", serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.textprod p {
+    font-family: "Fahkwang", serif;
+
+}
+
+/* products style */
+.container-of-products .all-products {
+    padding-top: 90px;
+    width: 100%;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    gap: 20px;
+}
+
+.container-of-products .product-one-by-one {
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+
+}
+
+/* box shadow hover */
+.product-one-by-one:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+.product-one-by-one:hover {
+    transform: scale(1.02);
+}
+
+
+.add-to-cart {
+    font-family: "Fahkwang", serif;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 53px;
+    padding: 11px 14px 11px;
+    background-color: black;
+    border-radius: 4px;
+    border: 1px #284b63 solid;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    left: 1px;
+}
+
+/* اضافة الهوفر ل add to cart */
+.add-to-cart:hover {
+    background-color: white;
+    border-radius: 1px;
+    border: 1px #000000 solid;
+    color: #000000;
+
+}
+
+
+
+/* styling the title of pics and price */
+
+.link-products {
+    padding-top: 7px;
+    font-family: "Fahkwang", serif;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+}
+
+.p-of-price {
+    padding-top: 7px;
+    font-family: "Fahkwang", serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.p-of-price del {
+    font-size: small;
+}
+
+.p-of-price span {
+    color: black;
+
+}
+
+
+/* اضافة هوفر تغيير الصور في صورة المنتوج */
+.main-img {
+
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    transition: 0.2s ease;
+}
+
+
+.size-opt {
+    background-color: white;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.size-opt:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.optl-class {
+    background-color: white;
+}
+
+.opt-class:hover {
+    background-color: white;
+    color: #000000;
+
+}
+
+
+body aside {
+    text-align: center;
+    position: relative;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    bottom: -78px;
+}
+
+body aside .category {
+    width: 195px;
+    min-height: 20px;
+    padding: 20px;
+    position: relative;
+    bottom: -80px;
+    overflow-x: hidden;
+    margin-inline: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body aside .price {
+    text-align: center;
+    width: 195px;
+    min-height: 20px;
+    padding: 20px;
+    position: relative;
+    bottom: -80px;
+    overflow-x: hidden;
+    margin-inline: auto;
+    box-sizing: border-box;
+}
+
+body aside .title-category,
+body aside .title-price {
+    max-height: 20px;
+    padding: 20px;
+    position: relative;
+    bottom: -80px;
+    font-family: "Fahkwang", serif;
+    font-size: 15px;
+    margin-inline: auto;
+    margin-bottom: 5px;
+
+}
+
+.sect_aside {
+    display: flex;
+}
+
+
+
+
+
+
 
 
 
@@ -469,63 +675,7 @@ body, h1, p {
 
 
 
-/* animated icons section */
-/* .animated-ico {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 100px ;
-    padding: 50px;
-}
-.animated-ico  h3 {
-    margin-top: 20px;
-    font-family: var(--font_primary);
-}
-.animated-ico p {
-    margin-top: 10px;
-    font-weight:500;
-    max-width: 300px;
-    font-family: var(--font_third); 
-}
-.shipping h3 {
-    color: #05a4b9;
-    margin-left: 72px;
-}
-.shipping img, 
-.services img {
-    position: relative;
-    margin-left: 79px;
-}
-.services h3 {
-    color: #05a4b9; 
-    margin-left:39px;
-}
-.secure h3 {
-    color: #05a4b9;
-    margin-left: 49px;
-}
-.secure img {
-    position: relative;
-    margin-left: 59px;
-} */
-
-
-
-
- /* .secure::before,
-.services::after {
-    content: "";
-    height: 170px;
-    width: 1px;
-    bottom: 175px;
-    margin-left: -100px;
-    position: absolute;
-    background-color: var(--white);
-    opacity: 50%;
-}  */
-
-/* footer styling */
+/* footer styling  */
 
 
 
