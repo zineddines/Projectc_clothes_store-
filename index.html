@@ -118,19 +118,19 @@
     
             <aside class="aside"> 
     
-                <label class="title-category" for="category"> CHOOSE CATRGORY</label>
-                <select class="category" name="category" id="category" >
-                    <option value="SHOW ALL" >SHOW ALL</option>
+                <label class="title-category" for="categoryFilter"> CHOOSE CATRGORY</label>
+                <select class="category" name="category" id="categoryFilter" >
+                    <option value="ALL" >SHOW ALL</option>
                     <option value="FITS">FITS</option>
                     <option value="SHOES">SHOES</option>
                     <option value="WATCHES">WATCHES</option>
                 </select>
-                <label class="title-price" for="PRICE">PRICE</label>
-                <select class="price" name="PRICE" id="PRICE">
-                    <option value="1000 DA -5000 DA" >1000 DA -5000 DA</option>
-                    <option value="6000 DA -10000 DA">6000 DA -10000 DA</option>
-                    <option value="11000 DA -15000 DA">11000 DA -15000 DA</option>
-                    <option value="16000 DA - 20000 DA">16000 DA - 20000 DA</option>
+                <label class="title-price" for="priceFilter">PRICE</label>
+                <select class="price" name="PRICE" id="priceFilter">
+                    <option value="1000-5000" >1000 DA -5000 DA</option>
+                    <option value="6000-10000">6000 DA -10000 DA</option>
+                    <option value="11000-15000">11000 DA -15000 DA</option>
+                    <option value="16000-20000">16000 DA - 20000 DA</option>
                 </select>
     
     
@@ -146,7 +146,7 @@
     
                 <div class="all-products" >
                   <!-- full  out fits -->
-                    <div class="product-one-by-one" data_price="10000" data_category="fit-1" >
+                    <div class="product-one-by-one" data_price="1000" data_category="FITS" >
                         <div class="in-pic">
                             <img class="main-img" src="products-pics/Winter Fit 2 - Walk in the park.webp" alt="">
                             <button style="font-size:12px" class="add-to-cart"> <i class="fa fa-shopping-cart"></i></button>
@@ -156,11 +156,11 @@
                         <div class="after-pic">
     
                             <h5 class="link-products"> <a href="يتحط هنا السيث خاص بكل منتوج" class="link-products">Winter Fit 2 - Walk in the park</a> </h5>
-                            <h4 class="p-of-price"> <span> 10000 DA</span> <del>14000 DA</del> </h4>
+                            <h4 class="p-of-price"> <span> 1000 DA</span> <del>1400 DA</del> </h4>
     
                         </div>
                     </div>
-                    <div class="product-one-by-one" title=" Winter Fit 4 - Premium Blue"  data_price="10000" data_category="fit-2">
+                    <div  class="product-one-by-one" title=" Winter Fit 4 - Premium Blue"  data_price="10000" data_category="FITS">
                         <div class="in-pic">
                             <img class="main-img" src="./products-pics/Winter Fit 4 - Premium Blue.webp" alt="">
                             <button style="font-size:12px" class="add-to-cart"> <i class="fa fa-shopping-cart"></i></button>
@@ -176,7 +176,7 @@
     
                         </div>
                     </div>
-                    <div class="product-one-by-one" title="Old Money Linen Combo (Longsleeve)"   data_price="10000" data_category="fit-3">
+                    <div class="product-one-by-one" title="Old Money Linen Combo (Longsleeve)"   data_price="6000" data_category="FITS">
                         <div class="in-pic">
                             <img class="main-img" src="./products-pics/Old Money Linen Combo (Longsleeve) (color2).webp" alt="">
                             <button style="font-size:12px" class="add-to-cart"> <i class="fa fa-shopping-cart"></i></button>
@@ -186,14 +186,14 @@
                         <div class="after-pic">
     
                             <h5 class="link-products"> <a href="يتحط هنا السيث خاص بكل منتوج" class="link-products"> Old Money Linen Combo</a> </h5>
-                            <h4 class="p-of-price"> <span> 10000 DA</span> <del>14000 DA</del> </h4>
+                            <h4 class="p-of-price"> <span> 6000 DA</span> <del>8000 DA</del> </h4>
     
     
                         </div>
                     </div>
                     <!-- shoes -->
     
-                    <div class="product-one-by-one" title="Old Money High Suede Loafers"  data_price="10000" data_category="shoes-1" >
+                    <div class="product-one-by-one" title="Old Money High Suede Loafers"  data_price="12000" data_category="SHOES" >
                         <div class="in-pic">
                             <img class="main-img" src="./products-pics/Old Money High Suede Loafers(3).webp" alt="">
                             <button style="font-size:12px" class="add-to-cart"> <i class="fa fa-shopping-cart"></i></button>
@@ -203,14 +203,14 @@
                         <div class="after-pic">
     
                             <h5 class="link-products"> <a href="يتحط هنا السيث خاص بكل منتوج" class="link-products">Old Money High Suede</a> </h5>
-                            <h4 class="p-of-price"> <span> 10000 DA</span> <del>14000 DA</del> </h4>
+                            <h4 class="p-of-price"> <span> 12000 DA</span> <del>20000 DA</del> </h4>
     
     
                         </div>
                     </div>
-                    <div class="product-one-by-one" title="Old Money Suede Clogs" data_price="10000" data_category="shoes-2" >
+                    <div class="product-one-by-one" title="Old Money Suede Clogs" data_price="10000" data_category="SHOES" >
                         <div class="in-pic">
-                            <img class="main-img" src="./products-pics/Old Money Premium Suede Loafers.jpg" alt="" data_price="10000" data_category="shoes-2">
+                            <img class="main-img" src="./products-pics/Old Money Premium Suede Loafers.jpg" alt="" >
                             <button style="font-size:12px" class="add-to-cart"> <i class="fa fa-shopping-cart"></i></button>
                         </div>
     
@@ -225,9 +225,9 @@
     
                         </div>
                     </div>
-                    <div class="product-one-by-one" title="Old Money Premium Suede Loafers"  data_price="10000" data_category="shoes-3">
+                    <div class="product-one-by-one" title="Old Money Premium Suede Loafers"  data_price="7000" data_category="SHOES">
                         <div class="in-pic">
-                            <img class="main-img" src="products-pics/Old Money Premium Suede Loafers.jpg" alt="" data_price="10000" data_category="shoes-2">
+                            <img class="main-img" src="products-pics/Old Money Premium Suede Loafers.jpg" alt="" >
                             <button style="font-size:12px" class="add-to-cart"> <i class="fa fa-shopping-cart"></i></button>
                         </div>
     
@@ -235,12 +235,12 @@
                         <div class="after-pic">
     
                             <h5 class="link-products"> <a href="يتحط هنا السيث خاص بكل منتوج" class="link-products">Old Money Premium Suede</a> </h5>
-                            <h4 class="p-of-price"> <span> 10000 DA</span> <del>14000 DA</del> </h4>
+                            <h4 class="p-of-price"> <span> 7000 DA</span> <del>11000 DA</del> </h4>
     
                         </div>
                     </div>
                     <!-- watches -->
-                    <div class="product-one-by-one" title="Geneva Classic Watch (Waterproof)" data_price="10000" data_category="watches-1" >
+                    <div class="product-one-by-one" title="Geneva Classic Watch (Waterproof)" data_price="16000" data_category="WATCHES" >
                         <div class="in-pic">
                             <img class="main-img" src="products-pics/Geneva Classic Watch (Waterproof).webp" alt="">
                             <button style="font-size:12px" class="add-to-cart"> <i class="fa fa-shopping-cart"></i></button>
@@ -250,12 +250,12 @@
                         <div class="after-pic">
     
                             <h5 class="link-products"> <a href="يتحط هنا السيث خاص بكل منتوج" class="link-products">Geneva Classic Watch</a> </h5>
-                            <h4 class="p-of-price"> <span> 10000 DA</span> <del>14000 DA</del> </h4>
+                            <h4 class="p-of-price"> <span> 16000 DA</span> <del>20000 DA</del> </h4>
     
     
                         </div>
                     </div>
-                    <div class="product-one-by-one" title="Lugano Classic Watch (Waterproof)" data_price="10000" data_category="watches-2">
+                    <div class="product-one-by-one" title="Lugano Classic Watch (Waterproof)" data_price="20000" data_category="WATCHES">
                         <div class="in-pic">
                             <img class="main-img" src="products-pics/Lugano Classic Watch (Waterproof).webp" alt="">
                             <button style="font-size:12px" class="add-to-cart"> <i class="fa fa-shopping-cart"></i></button>
@@ -265,14 +265,14 @@
                         <div class="after-pic">
     
                             <h5 class="link-products"> <a href="يتحط هنا السيث خاص بكل منتوج" class="link-products">Lugano Classic Watch </a> </h5>
-                            <h4 class="p-of-price"> <span> 10000 DA</span> <del>14000 DA</del> </h4>
+                            <h4 class="p-of-price"> <span> 20000 DA</span> <del>30000 DA</del> </h4>
     
     
                         </div>
                     </div>
-                    <div class="product-one-by-one" title="Athens Chronograph Watch" data_price="10000" data_category="watches-3">
+                    <div class="product-one-by-one" title="Athens Chronograph Watch" data_price="2000" data_category="watches">
                         <div class="in-pic">
-                            <img class="main-img" src="./products-pics/Athens Chronograph Watch(2).webp" alt="" data_price="10000" data_category="watches-2">
+                            <img class="main-img" src="./products-pics/Athens Chronograph Watch(2).webp" alt="" >
                             <button style="font-size:12px" class="add-to-cart"> <i class="fa fa-shopping-cart"></i></button>
                         </div>
     
@@ -281,7 +281,7 @@
     
                             <h5 class="link-products"> <a href="يتحط هنا السيث خاص بكل منتوج" class="link-products">Athens Chronograph Watch
                             </a> </h5>
-                            <h4 class="p-of-price"> <span> 10000 DA</span> <del>14000 DA</del> </h4>
+                            <h4 class="p-of-price"> <span> 2000 DA</span> <del>5000 DA</del> </h4>
     
     
                         </div>
