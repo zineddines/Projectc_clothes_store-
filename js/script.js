@@ -69,7 +69,9 @@ categoryFilter.addEventListener("change", filterProducts);
 priceFilter.addEventListener("change", filterProducts);
 
 // Call filterProducts initially to display the correct products
-// filterProducts();
+ filterProducts();
+
+
 
 
 
