@@ -9,7 +9,7 @@
 /* Basic Page Styling */
 body {
     background-color: #f8f9fa;
-   
+    
 }
 
 
@@ -443,6 +443,11 @@ body .container-of-products {
     text-align: center;
     left: 1px;
 }
+.add-to-cart.clicked {
+    background-color: white;
+    color: black;
+}
+
 
 /* اضافة الهوفر ل add to cart */
 .add-to-cart:hover {
@@ -816,6 +821,7 @@ footer h3 {
 
 /* product detail  */
 /* khalil was here */
+
 
 
 

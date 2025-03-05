@@ -24,7 +24,7 @@ function disprv(){
 
     list_head.classList.remove("show");
     
-    }
+}
 
 
 
@@ -69,7 +69,19 @@ categoryFilter.addEventListener("change", filterProducts);
 priceFilter.addEventListener("change", filterProducts);
 
 // Call filterProducts initially to display the correct products
- filterProducts();
+filterProducts();
+
+
+// product 
+
+//the click button of cart 
+
+
+
+
+
+
+
 
 
 
