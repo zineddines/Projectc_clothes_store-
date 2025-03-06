@@ -9,20 +9,111 @@ if (localStorage.getItem("cartAdded") === "true") {
 }
 
 
+
+  // the product added in the cart page 
+  
+
 // Add event listener to toggle state
 button.addEventListener("click", function () {
+ 
     if (button.classList.contains("added-to-cart")) {
         button.classList.remove("added-to-cart");
         button.innerHTML="Add to cart "
         localStorage.setItem("cartAdded", "false"); // Remove from localStorage
+         if(button.getAttribute("data-num")==1){
+           
+           prod1.classList.remove("visible");
+        console.log("ok")
+        }else{
+            if(button.getAttribute("data-num")==2){
+                prod2.classList.remove("visible");
+            }else{
+                if(button.getAttribute("data-num")==3){
+                    prod3.classList.remove("visible");
+                }else{
+                    if(button.getAttribute("data-num")==4){
+                        prod4.classList.remove("visible");
+                    }else{
+                        console.log("ok")
+                        // if(button.getAttribute("data-num")==5){
+                        //     prod5.classList.remove("visible");
+                        // }else{
+                        //     if(button.getAttribute("data-num")==6){
+                        //         prod6.classList.remove("visible");
+                        //     }else{
+                        //         if(button.getAttribute("data-num")==7){
+                        //             prod7.classList.remove("visible");
+                        //         }else{
+                        //             if(button.getAttribute("data-num")==8){
+                        //                 prod8.classList.remove("visible");
+                        //             }else{
+                        //                 if(button.getAttribute("data-num")==9){
+                        //                     prod9.classList.remove("visible");
+                        //                 }
+                        //             }
+                        //         }
+                        //     }
+                        // }
+                    }
+                }
+            }
+        }
+        
+
+
+
+
+
     } else {
         button.classList.add("added-to-cart"); 
         button.innerHTML="remove the product "
         localStorage.setItem("cartAdded", "true"); // Save in localStorage
+        if(button.getAttribute("data-num")==1){
+            console.log(prod1)
+            
+            prod1.classList.add("visible");
+            
+        }else{
+            if(button.getAttribute("data-num")==2){
+                prod2.classList.add("visible");
+            }else{
+                if(button.getAttribute("data-num")==3){
+                    prod3.classList.add("visible");
+                }else{
+                    if(button.getAttribute("data-num")==4){
+                        prod4.classList.add("visible");
+                    }else{
+                        if(button.getAttribute("data-num")==5){
+                            prod5.classList.add("visible");
+                        }else{
+                            if(button.getAttribute("data-num")==6){
+                                prod6.classList.add("visible");
+                            }else{
+                                if(button.getAttribute("data-num")==7){
+                                    prod7.classList.add("visible");
+                                }else{
+                                    if(button.getAttribute("data-num")==8){
+                                        prod8.classList.add("visible");
+                                    }else{
+                                        if(button.getAttribute("data-num")==9){
+                                            prod9.classList.add("visible");
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-    
+  
 
 });
+
+
+
+
 
 
 
@@ -137,6 +228,8 @@ document.querySelectorAll(".clickable").forEach(div => {
 // clikc on addtocart
 
  // Select the button
+
+
 
 
 
