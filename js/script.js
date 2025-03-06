@@ -74,7 +74,18 @@ filterProducts();
 
 // product 
 
-//the click button of cart 
+// click on product 
+
+
+
+
+document.querySelectorAll(".clickable").forEach(div => {
+    div.addEventListener("click", function() {
+        const url = this.getAttribute("data-url"); // Get the link from data-url
+        window.location.href = url; // Redirect to the link
+    });
+});
+
 
 
 
