@@ -1,8 +1,34 @@
 // Wait for the document to fully load
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById("atc");
+
+// Check if button state is saved in localStorage
+if (localStorage.getItem("cartAdded") === "true") {
+    button.classList.add("added-to-cart"); // Keep the button white
+    button.innerHTML="remove the product "
+}
+
+
+// Add event listener to toggle state
+button.addEventListener("click", function () {
+    if (button.classList.contains("added-to-cart")) {
+        button.classList.remove("added-to-cart");
+        button.innerHTML="Add to cart "
+        localStorage.setItem("cartAdded", "false"); // Remove from localStorage
+    } else {
+        button.classList.add("added-to-cart"); 
+        button.innerHTML="remove the product "
+        localStorage.setItem("cartAdded", "true"); // Save in localStorage
+    }
     
 
-    
+});
+
+
+
+   
+
+
 });
 
 
@@ -87,7 +113,30 @@ document.querySelectorAll(".clickable").forEach(div => {
 });
 
 
+// images product  clicking
+                var mainimage = document.getElementById("mainimage");
+                var smallimage =document.getElementsByClassName("smallimage");
 
+                smallimage[0].onclick = function () {
+                    mainimage.src= smallimage[0].src
+                }
+                smallimage[1].onclick = function () {
+                    mainimage.src= smallimage[1].src
+                }
+                smallimage[2].onclick = function () {
+                    mainimage.src= smallimage[2].src
+                }
+                smallimage[3].onclick = function () {
+                    mainimage.src= smallimage[3].src
+                }
+
+
+ 
+
+
+// clikc on addtocart
+
+ // Select the button
 
 
 

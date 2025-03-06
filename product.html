@@ -39,12 +39,9 @@
         <!-- Baskerville  -->
     <link href="https://fonts.cdnfonts.com/css/baskerville" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css"> <!-- Link to CSS -->
-    <script defer src="js/script.js"></script> <!-- Link to JavaScript -->
+    <script defer src="./js/script.js"></script> <!-- Link to JavaScript -->
 </head>
-
-
-
-        <body>
+<body>
             <div class="cont-pro">
             <nav class="header_product">
                 <div class="logo"><a href="index.html">IZHOMME</a></div>
@@ -89,7 +86,7 @@
                         <option>S</option>
                     </select>
                     <input type="number" value="1">
-                    <button>Add To Cart</button>
+                    <button id="atc" class="">Add To Cart</button>
                     <h4>Product Details</h4>
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ipsum sequi natus eos repellat reprehenderit quasi voluptatum pariatur numquam sed harum, velit voluptas! Exercitationem perspiciatis ipsam dignissimos alias minima cum? 100
                     </span>
@@ -151,25 +148,26 @@
                 </div>
 
             </footer>
-
+           
+            </div>
             <script>
                 var mainimage = document.getElementById("mainimage");
-                var smallimage =document.getElementsByClassName("smallimage");
-
+                var smallimage = document.getElementsByClassName("smallimage");
+    
                 smallimage[0].onclick = function () {
-                    mainimage.src= smallimage[0].src
+                    mainimage.src = smallimage[0].src
                 }
                 smallimage[1].onclick = function () {
-                    mainimage.src= smallimage[1].src
+                    mainimage.src = smallimage[1].src
                 }
                 smallimage[2].onclick = function () {
-                    mainimage.src= smallimage[2].src
+                    mainimage.src = smallimage[2].src
                 }
                 smallimage[3].onclick = function () {
-                    mainimage.src= smallimage[3].src
+                    mainimage.src = smallimage[3].src
                 }
             </script>
 
+            
         </body>
-    </div>
     </html>

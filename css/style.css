@@ -1046,9 +1046,20 @@ footer h3 {
     border-radius: 5px;
     background-color: #172d3b;
     color: white;
-    font-family: var(--font_third);
+    font-family: var(--font_primary);
     font-size: 14px;
     cursor: pointer;
+}
+
+
+/* add to cart in product page  */
+
+#prodetails .added-to-cart {
+    background-color: white;
+    color: var(--green_to_blue);
+    font-weight: bold;
+    border: 1px solid var(--green_to_blue);
+    font-family: var(--font_primary);
 }
 #prodetails button:hover {
     border: solid 2px var(--cold_black);
