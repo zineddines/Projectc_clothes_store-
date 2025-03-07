@@ -672,6 +672,10 @@ body .container-of-products {
     height: 300px;
     transition: 0.2s ease;
     margin: auto;
+
+}
+.in-pic{
+    position: relative;
 }
 .near-img {
     position: absolute;
